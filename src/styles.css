@@ -1,1 +1,23 @@
-/* You can add global styles to this file, and also import other style files */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  min-height: 100%;
+  background-color: #050816 !important;
+  color: #f8fafc;
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  overflow-x: hidden;
+  margin: 0 !important;
+  padding: 0 !important;
+  border-top: none !important;
+}
+
+/* هذا الجزء سيجبر الـ Navbar على عدم إظهار أي خط فاصل أو ظل سفلي مزعج */
+nav, header, .navbar, app-navbar {
+  border-bottom: none !important;
+  box-shadow: none !important;
+}

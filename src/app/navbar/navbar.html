@@ -1,0 +1,39 @@
+<nav class="navbar" [class.scrolled]="isScrolled">
+  <div class="nav-container">
+    <!-- اللوجو -->
+    <a href="#" class="nav-logo">
+    ULTIMATE PARADOX<span class="logo-accent">AI</span>
+    </a>
+
+    <!-- القائمة الرئيسية للشاشات الكبيرة -->
+    <ul class="nav-menu" [class.active]="isMenuOpen">
+      <li class="nav-item">
+        <a href="#home" class="nav-link" (click)="closeMenu()">Home</a>
+      </li>
+      <li class="nav-item">
+        <a href="#about" class="nav-link" (click)="closeMenu()">About</a>
+      </li>
+      <li class="nav-item">
+        <a href="#skills" class="nav-link" (click)="closeMenu()">Skills</a>
+      </li>
+      <li class="nav-item">
+        <a href="#brojactes" class="nav-link" (click)="closeMenu()">Projects</a>
+      </li>
+      <li class="nav-item mobile-only">
+        <a href="https://wa.me/20150098236" class="nav-btn" (click)="closeMenu()">Let's Talk</a>
+      </li>
+    </ul>
+
+    <!-- زر التواصل (للشاشات الكبيرة) -->
+    <div class="nav-action desktop-only">
+      <a href="https://wa.me/20150098236" target="_blank" class="btn-contact">Let's Talk</a>
+    </div>
+
+    <!-- زر القائمة للموبايل (Hamburger Icon) -->
+    <div class="hamburger" [class.active]="isMenuOpen" (click)="toggleMenu()">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+  </div>
+</nav>
