@@ -5,13 +5,13 @@ import { SkilsComponent } from '../pages/skils/skils';
 import { NavbarComponent } from './navbar/navbar';
 import { Brojactes } from '../pages/brojactes/brojactes';
 import { Thances } from '../pages/thances/thances';
-
+import { Education } from '../pages/education/education';
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [NavbarComponent,WelcomComponent,AbuteComponent,SkilsComponent,Brojactes,Thances],
+  imports: [NavbarComponent,WelcomComponent,AbuteComponent,SkilsComponent,Education,Brojactes,Thances],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
